@@ -1,0 +1,19 @@
+.container {
+  max-width: 165px;
+  max-height: 58px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo{
+    width: 140px;
+    height: 24px;
+}
+
+.text{
+    padding-top: 10px;
+    color: #e4e5ea;
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 300;
+}
