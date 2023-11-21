@@ -1,6 +1,19 @@
 .layout {
-    max-width: 1480px;
-    max-height: 980px;
+  max-width: 1480px;
+  max-height: 980px;
+
+  &__mobilebg {
+    display: none;
+    @media all and (max-width: 320px) {
+      display: block;
+      background-image: url(/images/mobilebg.png);
+      background-repeat: no-repeat;
+      width: 100%;
+      min-height: 500px;
+      position: relative;
+      top: -39px;
+    }
+  }
   &__redlight {
     z-index: 0;
     width: 860px;
@@ -10,6 +23,10 @@
     position: relative;
     top: -200px;
     left: -36%;
+
+    @media all and (max-width: 320px) {
+      display: none;
+    }
   }
 
   &__purplelight {
@@ -22,6 +39,9 @@
     position: relative;
     top: -967px;
     left: 15%;
+    @media all and (max-width: 320px) {
+      display: none;
+    }
 
     &__purpleball {
       z-index: 0;
