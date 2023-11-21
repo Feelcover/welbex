@@ -1,0 +1,24 @@
+.layout {
+  &__redlight {
+    z-index: 0;
+    width: 860px;
+    height: 760px;
+   background-image: url(/images/redlight.png);
+   object-fit: cover;
+   position: relative;
+   top: 0;
+   left: -2%;
+  }
+
+  &__purplelight {
+    z-index: 0;
+    width: 860px;
+    height: 460px;
+   background-image: url(/images/purplelight.png);
+   object-fit: cover;
+   position: relative;
+   top: -950px;
+   left: 31%;
+   
+  }
+}
