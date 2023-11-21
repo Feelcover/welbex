@@ -7,10 +7,16 @@
   padding: 57px 0 90px;
   display: flex;
   justify-content: space-between;
+
+  @media all and (max-width: 1110px) {
+    padding: 57px 20px 60px;
+
+  }
   @media all and (max-width: 550px) {
     max-width: 320px;
     min-height: 55px;
     padding: 16px 0 60px;
+
   }
 
   .leftContainer {

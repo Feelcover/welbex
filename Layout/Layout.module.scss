@@ -1,6 +1,8 @@
 .layout {
   max-width: 1480px;
-  max-height: 980px;
+  min-height: 980px;
+  width: 100%;
+  position: relative;
 
   &__mobilebg {
     display: none;
@@ -10,7 +12,7 @@
       background-repeat: no-repeat;
       width: 100%;
       min-height: 500px;
-      position: relative;
+      position: absolute;
       top: -39px;
     }
   }
@@ -20,8 +22,8 @@
     height: 760px;
     background-image: url(/images/redlight.png);
     object-fit: cover;
-    position: relative;
-    top: -200px;
+    position: absolute;
+    top: -59px;
     left: -36%;
 
     @media all and (max-width: 320px) {
@@ -36,8 +38,8 @@
     background-image: url(/images/purplelight.png);
     object-fit: cover;
     background-repeat: no-repeat;
-    position: relative;
-    top: -967px;
+    position: absolute;
+    top: 0px;
     left: 15%;
     @media all and (max-width: 320px) {
       display: none;
@@ -48,7 +50,7 @@
       width: 80px;
       height: 65px;
       background-image: url(/images/purpleball.svg);
-      position: relative;
+      position: absolute;
       top: 0%;
       left: 74%;
     }
@@ -57,8 +59,8 @@
       width: 100px;
       height: 95px;
       background-image: url(/images/redball.png);
-      position: relative;
-      top: 1%;
+      position: absolute;
+      top: 12%;
       left: 34%;
     }
     &__redballsmall {

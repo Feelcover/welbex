@@ -1,3 +1,4 @@
+import Main from '@/components/Main/Main'
 import Layout from '@/Layout/Layout'
 import Head from 'next/head'
 
@@ -17,7 +18,7 @@ export default function Home() {
         />
       </Head>
      <Layout>
-      
+      <Main/>
      </Layout>
     </>
   )

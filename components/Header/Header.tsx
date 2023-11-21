@@ -7,13 +7,14 @@ import { useMediaQuery } from "@/hooks";
 
 const Header = () => {
   const isTablet = useMediaQuery(1150);
-  const isMobile = useMediaQuery(550);
+  const isIntermediate = useMediaQuery(740);
+  const isMobile = useMediaQuery(560);
 
 
   return (
     <header className={styles.header}>
       <div className={styles.leftContainer}>
-        {!isTablet && <Logo />}
+        {!isIntermediate && <Logo />}
         <nav className={styles.leftContainer__menu}>
           <motion.div
             className={styles.leftContainer__menu__item}

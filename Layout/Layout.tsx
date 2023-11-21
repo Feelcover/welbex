@@ -11,21 +11,21 @@ const Layout = ({ children }: { children: React.ReactNode }) => (
     <div className={styles.layout__redlight} />
     <div className={styles.layout__purplelight}>
       <motion.div
-        transition={{ delay: 0.1 }}
+        transition={{ delay: 0.6 }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
         <div className={styles.layout__purplelight__purpleball} />
       </motion.div>
       <motion.div
-        transition={{ delay: 0.2 }}
+        transition={{ delay: 0.7 }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
         <div className={styles.layout__purplelight__redball} />
       </motion.div>
       <motion.div
-        transition={{ delay: 0.3 }}
+        transition={{ delay: 0.8 }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >

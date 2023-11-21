@@ -1,0 +1,34 @@
+.main {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .titleContainer {
+      max-width: 362px;
+
+      .title {
+        color: #e4e5ea;
+        font-family: "Inter";
+        font-size: 48px;
+        font-weight: 400;
+      }
+
+      .titleLogo {
+        background: linear-gradient(92deg,#fcb045 27.14%,#ff3f78 81.36%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Inter";
+        font-size: 48px;
+        font-weight: 900;
+      }
+
+      .description {
+      }
+    }
+  }
+}
