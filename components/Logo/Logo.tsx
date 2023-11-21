@@ -5,7 +5,7 @@ import styles from './Logo.module.scss'
 const Logo = () => {
   return (
     <Link href='/' className={styles.container}>
-        <img className={styles.logo} src="/images/logo.svg" alt="logo" />
+        <div className={styles.logo}/>
         <span className={styles.text}>
             крупный интегратор CRM в Росcии и ещё 8 странах
           </span>
