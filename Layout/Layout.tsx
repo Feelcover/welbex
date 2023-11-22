@@ -8,24 +8,35 @@ const Layout = ({ children }: { children: React.ReactNode }) => (
   <div className={styles.layout}>
     <Header />
     <div className={styles.layout__mobilebg} />
-    <div className={styles.layout__redlight} />
     <div className={styles.layout__purplelight}>
       <motion.div
-        transition={{ delay: 0.6 }}
+      transition={{
+        delay: 0.6,
+        ease: "linear",
+        duration: 0.6,
+      }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
         <div className={styles.layout__purplelight__purpleball} />
       </motion.div>
       <motion.div
-        transition={{ delay: 0.7 }}
+      transition={{
+        delay: 0.7,
+        ease: "linear",
+        duration: 0.6,
+      }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
         <div className={styles.layout__purplelight__redball} />
       </motion.div>
       <motion.div
-        transition={{ delay: 0.8 }}
+      transition={{
+        delay: 0.8,
+        ease: "linear",
+        duration: 0.6,
+      }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
@@ -33,7 +44,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => (
       </motion.div>
     </div>
     {children}
-    <Footer />
+    {/* <Footer /> */}
   </div>
 );
 

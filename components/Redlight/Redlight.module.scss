@@ -1,0 +1,14 @@
+.redlight {
+    z-index: 0;
+    width: 860px;
+    height: 760px;
+    background-image: url(/images/redlight.png);
+    object-fit: cover;
+    position: absolute;
+    top: -59px;
+    left: -490px;
+
+    @media all and (max-width: 370px) {
+      display: none;
+    }
+  }

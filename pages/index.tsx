@@ -1,5 +1,6 @@
 import Main from '@/components/Main/Main'
 import Layout from '@/Layout/Layout'
+import Redlight from '@/components/Redlight/Redlight'
 import Head from 'next/head'
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
           href="/images/favicon.ico"
         />
       </Head>
+      <Redlight/>
      <Layout>
       <Main/>
      </Layout>

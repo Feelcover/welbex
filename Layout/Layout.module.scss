@@ -3,6 +3,7 @@
   min-height: 980px;
   width: 100%;
   position: relative;
+  margin: 0 auto;
 
   &__mobilebg {
     display: none;
@@ -13,21 +14,7 @@
       width: 100%;
       min-height: 500px;
       position: absolute;
-      top: -39px;
-    }
-  }
-  &__redlight {
-    z-index: 0;
-    width: 860px;
-    height: 760px;
-    background-image: url(/images/redlight.png);
-    object-fit: cover;
-    position: absolute;
-    top: -59px;
-    left: -36%;
-
-    @media all and (max-width: 320px) {
-      display: none;
+      top: 60px;
     }
   }
 
@@ -60,8 +47,9 @@
       height: 95px;
       background-image: url(/images/redball.png);
       position: absolute;
-      top: 12%;
+      top: 13%;
       left: 34%;
+
     }
     &__redballsmall {
       z-index: 0;
