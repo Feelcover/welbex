@@ -6,7 +6,7 @@ import styles from "./Header.module.scss";
 import { useMediaQuery } from "@/hooks";
 
 const Header = () => {
-  const isTablet = useMediaQuery(1150);
+  const isTablet = useMediaQuery(1200);
   const isIntermediate = useMediaQuery(740);
   const isMobile = useMediaQuery(560);
 

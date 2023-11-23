@@ -1,10 +1,10 @@
 .main {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1144px;
   margin: 0 auto;
   transition: all 0.4s ease-in-out;
   @media all and (max-width: 1200px) {
-    max-width: 800px;
+    max-width: 700px;
   }
 
   .wrapper {
@@ -27,7 +27,6 @@
       }
       @media all and (max-width: 320px) {
         text-align: left;
-        
       }
 
       .title {
@@ -36,6 +35,7 @@
         font-size: 48px;
         font-weight: 400;
         margin: 0;
+
         @media all and (max-width: 550px) {
           font-size: 36px;
         }
@@ -86,9 +86,13 @@
         font-family: "Inter";
         font-size: 18px;
         font-weight: 500;
-        margin: 16px 0 43px 3px;
+        margin: 18px 0 43px 3px;
+
         @media all and (max-width: 850px) {
           text-align: left;
+        }
+        @media all and (max-width: 850px) {
+          margin: 16px 0 21px 3px;
         }
 
         &__Logo {
@@ -101,8 +105,7 @@
           font-weight: 700;
           letter-spacing: 0.9px;
           text-transform: uppercase;
-          @media all and (max-width: 550px){
-
+          @media all and (max-width: 550px) {
             text-transform: lowercase;
             letter-spacing: 0;
           }
@@ -112,55 +115,9 @@
       .gifts {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 33px 32px;
-        &__widgets {
-          display: flex;
-          flex-direction: column;
-          min-width: 135px;
-        }
-
-        &__dashboard {
-          display: flex;
-          flex-direction: column;
-          min-width: 135px;
-        }
-
-        &__skype {
-          display: flex;
-          flex-direction: column;
-          min-width: 135px;
-        }
-
-        &__crm {
-          display: flex;
-          flex-direction: column;
-          min-width: 135px;
-        }
-
-        &__title {
-          color: #e4e5ea;
-          text-align: right;
-          font-family: "Inter";
-          font-size: 18px;
-          font-weight: 500;
-          letter-spacing: 0.9px;
-          text-transform: uppercase;
-          margin: 0 0 6px;
-          @media all and (max-width: 850px) {
-            text-align: left;
-          }
-        }
-        &__description {
-          color: #e4e5ea;
-          text-align: right;
-          font-family: "Montserrat";
-          font-size: 16px;
-          font-weight: 400;
-          @media all and (max-width: 850px) {
-            text-align: left;
-          }
-        }
+        gap: 32px 30px;
       }
+
       .button {
         width: 262px;
         height: 61px;
@@ -171,7 +128,7 @@
         font-family: "Inter";
         font-size: 16px;
         font-weight: 500;
-        margin: 61px 0 0 39px;
+        margin: 63px 0 0 37px;
         cursor: pointer;
         position: relative;
         transition: all 0.4s ease-in-out;
@@ -220,6 +177,12 @@
             left: 130%;
           }
         }
+      }
+      .giftsMobile {
+        display: grid;
+        grid-template-columns: 123px 164px;
+        gap: 14px 0;
+        align-self: center;
       }
     }
   }

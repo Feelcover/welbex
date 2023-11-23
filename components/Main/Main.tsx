@@ -1,8 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./Main.module.scss";
+import { useMediaQuery } from "@/hooks";
+import GiftsMobile from "../Gifts/GiftsMobile/GiftsMobile";
+import Gifts from "../Gifts/Gifts";
 
 const Main = () => {
+  const isMobile = useMediaQuery(400);
   return (
     <main className={styles.main}>
       <div className={styles.wrapper}>
@@ -50,78 +54,112 @@ const Main = () => {
               {""} мы дарим:
             </p>
           </motion.div>
-          <div className={styles.gifts}>
-            <motion.div
-              transition={{
-                delay: 1.8,
-                duration: 0.4,
-              }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-            >
-              <div className={styles.gifts__widgets}>
-                <p className={styles.gifts__title}>Виджеты</p>
-                <span className={styles.gifts__description}>
-                  30 готовых решений
-                </span>
+          {!isMobile && (
+            <>
+              <div className={styles.gifts}>
+                <motion.div
+                  transition={{
+                    delay: 1.8,
+                    duration: 0.4,
+                  }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                >
+                  <Gifts title="Виджеты" description="30 готовых решений" />
+                </motion.div>
+                <motion.div
+                  transition={{
+                    delay: 1.9,
+                    duration: 0.4,
+                  }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                >
+                  <Gifts
+                    title="Dashboard"
+                    description="с показателями вашего бизнеса"
+                  />
+                </motion.div>
+                <motion.div
+                  transition={{
+                    delay: 2,
+                    duration: 0.4,
+                  }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                >
+                  <Gifts
+                    title="Skype Аудит"
+                    description="отдела продаж и CRM системы"
+                  />
+                </motion.div>
+                <motion.div
+                  transition={{
+                    delay: 2.1,
+                    duration: 0.4,
+                  }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                >
+                  <Gifts title="35 дней" description="использования CRM" />
+                </motion.div>
               </div>
-            </motion.div>
-            <motion.div
-              transition={{
-                delay: 1.9,
-                duration: 0.4,
-              }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-            >
-              <div className={styles.gifts__dashboard}>
-                <p className={styles.gifts__title}>Dashboard</p>
-                <span className={styles.gifts__description}>
-                  с показателями вашего бизнеса
-                </span>
-              </div>
-            </motion.div>
-            <motion.div
-              transition={{
-                delay: 2,
-                duration: 0.4,
-              }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-            >
-              <div className={styles.gifts__skype}>
-                <p className={styles.gifts__title}>Skype Аудит</p>
-                <span className={styles.gifts__description}>
-                  отдела продаж и CRM системы
-                </span>
-              </div>
-            </motion.div>
-            <motion.div
-              transition={{
-                delay: 2.1,
-                duration: 0.4,
-              }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-            >
-              <div className={styles.gifts__crm}>
-                <p className={styles.gifts__title}>35 дней</p>
-                <span className={styles.gifts__description}>
-                  использования CRM
-                </span>
-              </div>
-            </motion.div>
-          </div>
-          <motion.div
-            transition={{
-              delay: 2.2,
-              duration: 0.4,
-            }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-          >
-          <button className={styles.button}>Получить консультацию</button>
-          </motion.div>
+              <motion.div
+                transition={{
+                  delay: 2.2,
+                  duration: 0.4,
+                }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+              >
+                <button className={styles.button}>Получить консультацию</button>
+              </motion.div>
+            </>
+          )}
+          {isMobile && (
+            <div className={styles.giftsMobile}>
+              <motion.div
+                transition={{
+                  delay: 1.7,
+                  duration: 0.4,
+                }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+              >
+                <GiftsMobile text="Skype аудит" />
+              </motion.div>
+              <motion.div
+                transition={{
+                  delay: 1.8,
+                  duration: 0.4,
+                }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+              >
+                <GiftsMobile text="30 виджетов" />
+              </motion.div>
+              <motion.div
+                transition={{
+                  delay: 1.9,
+                  duration: 0.4,
+                }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+              >
+                <GiftsMobile text="Dashboard" />
+              </motion.div>
+              <motion.div
+                transition={{
+                  delay: 2,
+                  duration: 0.4,
+                }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+              >
+                <GiftsMobile text="Месяц аmoCRM" />
+              </motion.div>
+            </div>
+          )}
         </section>
       </div>
     </main>

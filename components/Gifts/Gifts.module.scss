@@ -1,0 +1,30 @@
+.gift {
+  display: flex;
+  flex-direction: column;
+  min-width: 135px;
+
+  &__title {
+    color: #e4e5ea;
+    text-align: right;
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    margin: 0 0 6px;
+    @media all and (max-width: 850px) {
+      text-align: left;
+    }
+  }
+
+  &__description {
+    color: #e4e5ea;
+    text-align: right;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    @media all and (max-width: 850px) {
+      text-align: left;
+    }
+  }
+}
