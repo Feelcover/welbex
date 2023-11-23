@@ -3,27 +3,63 @@
   flex-direction: column;
   width: 100%;
   max-width: 1141px;
+  max-height: 100%;
   margin: 123px auto 0;
+  transition: all 0.4s ease-in-out;
+  @media all and (max-width:1200px) {
+    padding: 0 20px;
+  margin: 53px auto 0;
+  }
+  @media all and (max-width:1010px) {
+    max-width: 700px;
+  }
+  @media all and (max-width:440px) {
+    padding: 0 15px;
+   }
+
+  .title {
+    color: #656566;
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+
+    @media all and (max-width:440px) {
+    font-size: 12px;
+     }
+  }
 
   .upperContainer {
     display: flex;
     justify-content: space-between;
+    @media all and (max-width:1010px) {
+      flex-direction: column;
+      max-width: fit-content;
+    }
 
     .rightContainer {
       display: flex;
+      @media all and (max-width:1010px) {
+        flex-direction: column;
+        max-width: fit-content;
+      }
+      @media all and (max-width:440px) {
+        margin: 47px 0 0 0;
+       }
+
+
 
       .about {
         margin-right: 98px;
 
-        &__title {
-          color: #656566;
-          font-family: "Inter";
-          font-size: 14px;
-          font-weight: 700;
-          letter-spacing: 0.7px;
-          text-transform: uppercase;
-          margin: 0 0 20px;
+        @media all and (max-width:1010px) {
+         margin-bottom: 25px;
         }
+        @media all and (max-width:440px) {
+          margin-bottom: 30px;
+         }
 
         &__nav {
           display: flex;
@@ -38,6 +74,11 @@
             max-width: fit-content;
             transition: all 0.3s ease-in-out;
             position: relative;
+
+            @media all and (max-width:440px) {
+              font-size: 14px;
+              max-width: fit-content;
+             }
 
             &:last-child {
               margin: 0;
@@ -73,16 +114,14 @@
 
       .menu {
         max-height: 175px;
+        width: fit-content;
 
-        &__title {
-          color: #656566;
-          font-family: "Inter";
-          font-size: 14px;
-          font-weight: 700;
-          letter-spacing: 0.7px;
-          text-transform: uppercase;
-          margin: 0 0 20px;
-        }
+        @media all and (max-width:1010px) {
+          margin-bottom: 25px;
+         }
+         @media all and (max-width:440px) {
+          margin-bottom: 32px;
+         }
 
         &__nav {
           display: flex;
@@ -91,6 +130,7 @@
           flex-wrap: wrap;
           max-width: 410px;
           justify-content: space-between;
+
 
           &__item {
             color: #e4e5ea;
@@ -102,6 +142,11 @@
             transition: all 0.3s ease-in-out;
             position: relative;
             margin-right: 52px;
+            @media all and (max-width:440px) {
+              font-size: 14px;
+              max-width: 111px;
+              margin-right: 37px;
+             }
 
             &:last-child {
               margin: 0;
@@ -140,15 +185,9 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-
-      &__title {
-        color: #656566;
-        font-family: "Inter";
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0.7px;
-        text-transform: uppercase;
-        margin: 0 0 18px;
+      width: fit-content;
+      @media all and (max-width:1010px) {
+        align-items: flex-start;
       }
 
       &__number {
@@ -157,6 +196,9 @@
         font-size: 16px;
         font-weight: 500;
         margin: 2px 0 21px;
+        @media all and (max-width:440px) {
+          margin: 0 0 10px;
+        }
       }
 
       &__social {
@@ -170,6 +212,9 @@
         font-family: "Inter";
         font-size: 16px;
         font-weight: 400;
+        @media all and (max-width:440px) {
+          text-align: start;
+        }
       }
     }
   }
@@ -185,6 +230,13 @@
     font-family: 'Montserrat';
     font-size: 12px;
     font-weight: 400;
+    @media all and (max-width:1010px) {
+      width: fit-content;
+    }
+    @media all and (max-width:440px) {
+      text-align: start;
+      margin-bottom: 60px;
+    }
 
     .copyright {
       margin: 0 0 5px;

@@ -22,7 +22,6 @@
       transition: all 0.4s ease-in-out;
 
       @media all and (max-width: 550px) {
-        text-align: center;
         max-width: 291px;
       }
       @media all and (max-width: 320px) {
@@ -86,7 +85,7 @@
         font-family: "Inter";
         font-size: 18px;
         font-weight: 500;
-        margin: 18px 0 43px 3px;
+        margin: 18px 1px 43px 0;
 
         @media all and (max-width: 850px) {
           text-align: left;
@@ -130,6 +129,7 @@
         font-weight: 500;
         margin: 63px 0 0 37px;
         cursor: pointer;
+        overflow: hidden;
         position: relative;
         transition: all 0.4s ease-in-out;
         &:hover {

@@ -30,6 +30,9 @@
       @media all and (max-width: 550px) {
         padding-left: 16px;
       }
+      @media all and (max-width: 440px) {
+        padding-left: 0;
+      }
 
       &__item {
         color: #e4e5ea;
