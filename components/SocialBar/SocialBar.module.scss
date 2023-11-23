@@ -1,0 +1,30 @@
+.nav {
+    max-width: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+
+  .tg {
+    background-image: url(/images/telegram.svg);
+    width: 20px;
+    height: 20px;
+  }
+  .vb {
+    background-image: url(/images/viber.svg);
+    width: 20px;
+    height: 20px;
+  }
+  .ws {
+    background-image: url(/images/whatsapp.svg);
+    width: 20px;
+    height: 20px;
+  }

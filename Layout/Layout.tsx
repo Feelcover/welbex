@@ -44,7 +44,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => (
       </motion.div>
     </div>
     {children}
-    {/* <Footer /> */}
+    <Footer />
   </div>
 );
 
