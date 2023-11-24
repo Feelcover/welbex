@@ -6,16 +6,16 @@
   max-height: 100%;
   margin: 123px auto 0;
   transition: all 0.4s ease-in-out;
-  @media all and (max-width:1200px) {
+  @media all and (max-width: 1200px) {
     padding: 0 20px;
-  margin: 53px auto 0;
+    margin: 53px auto 0;
   }
-  @media all and (max-width:1010px) {
+  @media all and (max-width: 1010px) {
     max-width: 700px;
   }
-  @media all and (max-width:440px) {
+  @media all and (max-width: 440px) {
     padding: 0 15px;
-   }
+  }
 
   .title {
     color: #656566;
@@ -26,40 +26,38 @@
     text-transform: uppercase;
     margin: 0 0 20px;
 
-    @media all and (max-width:440px) {
-    font-size: 12px;
-     }
+    @media all and (max-width: 440px) {
+      font-size: 12px;
+    }
   }
 
   .upperContainer {
     display: flex;
     justify-content: space-between;
-    @media all and (max-width:1010px) {
+    @media all and (max-width: 1010px) {
       flex-direction: column;
       max-width: fit-content;
     }
 
     .rightContainer {
       display: flex;
-      @media all and (max-width:1010px) {
+      @media all and (max-width: 1010px) {
         flex-direction: column;
         max-width: fit-content;
       }
-      @media all and (max-width:440px) {
+      @media all and (max-width: 440px) {
         margin: 47px 0 0 0;
-       }
-
-
+      }
 
       .about {
         margin-right: 98px;
 
-        @media all and (max-width:1010px) {
-         margin-bottom: 25px;
+        @media all and (max-width: 1010px) {
+          margin-bottom: 25px;
         }
-        @media all and (max-width:440px) {
+        @media all and (max-width: 440px) {
           margin-bottom: 30px;
-         }
+        }
 
         &__nav {
           display: flex;
@@ -75,10 +73,10 @@
             transition: all 0.3s ease-in-out;
             position: relative;
 
-            @media all and (max-width:440px) {
+            @media all and (max-width: 440px) {
               font-size: 14px;
               max-width: fit-content;
-             }
+            }
 
             &:last-child {
               margin: 0;
@@ -116,12 +114,12 @@
         max-height: 175px;
         width: fit-content;
 
-        @media all and (max-width:1010px) {
+        @media all and (max-width: 1010px) {
           margin-bottom: 25px;
-         }
-         @media all and (max-width:440px) {
+        }
+        @media all and (max-width: 440px) {
           margin-bottom: 32px;
-         }
+        }
 
         &__nav {
           display: flex;
@@ -130,7 +128,6 @@
           flex-wrap: wrap;
           max-width: 410px;
           justify-content: space-between;
-
 
           &__item {
             color: #e4e5ea;
@@ -142,11 +139,11 @@
             transition: all 0.3s ease-in-out;
             position: relative;
             margin-right: 52px;
-            @media all and (max-width:440px) {
+            @media all and (max-width: 440px) {
               font-size: 14px;
               max-width: 111px;
               margin-right: 37px;
-             }
+            }
 
             &:last-child {
               margin: 0;
@@ -186,7 +183,7 @@
       flex-direction: column;
       align-items: flex-end;
       width: fit-content;
-      @media all and (max-width:1010px) {
+      @media all and (max-width: 1010px) {
         align-items: flex-start;
       }
 
@@ -196,14 +193,13 @@
         font-size: 16px;
         font-weight: 500;
         margin: 2px 0 21px;
-        @media all and (max-width:440px) {
-          margin: 0 0 10px;
+        @media all and (max-width: 440px) {
+          margin: 0 0 7px;
         }
       }
 
       &__social {
-        min-width: 80px;
-        margin-bottom: 2px;
+        min-width: 94px;
       }
 
       &__address {
@@ -212,8 +208,12 @@
         font-family: "Inter";
         font-size: 16px;
         font-weight: 400;
-        @media all and (max-width:440px) {
+        @media all and (max-width: 440px) {
+          font-size: 14px;
+          font-weight: 400;
           text-align: start;
+          margin: 10px 0 19px;
+
         }
       }
     }
@@ -225,15 +225,15 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    color: #E4E5EA;
+    color: #e4e5ea;
     text-align: right;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-size: 12px;
     font-weight: 400;
-    @media all and (max-width:1010px) {
+    @media all and (max-width: 1010px) {
       width: fit-content;
     }
-    @media all and (max-width:440px) {
+    @media all and (max-width: 440px) {
       text-align: start;
       margin-bottom: 60px;
     }
@@ -241,7 +241,7 @@
     .copyright {
       margin: 0 0 5px;
     }
-    .privacyPolicy{
+    .privacyPolicy {
       margin: 0;
     }
   }
